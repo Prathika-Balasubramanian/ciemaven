@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic Food App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>🍕 Simple Food Delivery</h2>
+
+<div class="box">
+    <b>Pizza</b> - ₹250
+    <button onclick="addItem('Pizza', 250)">Add</button>
+</div>
+
+<div class="box">
+    <b>Burger</b> - ₹150
+    <button onclick="addItem('Burger', 150)">Add</button>
+</div>
+
+<div class="box">
+    <b>Biryani</b> - ₹300
+    <button onclick="addItem('Biryani', 300)">Add</button>
+</div>
+
+<h3>🛒 Your Cart</h3>
+<ul id="cartList"></ul>
+<h4>Total: ₹<span id="total">0</span></h4>
+<button onclick="order()">Order Now</button>
+
+<script src="script.js"></script>
+</body>
+</html>
